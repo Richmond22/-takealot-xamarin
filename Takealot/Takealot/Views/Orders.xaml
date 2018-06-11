@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Takealot.Views.Orders"
+             Title="Orders">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label FontSize="14" TextColor="Navy" Text="Order ID       Order Date "/>
+            <ListView SeparatorVisibility="None" HasUnevenRows="true" x:Name="orderList" >
+                <ListView.ItemTemplate>
+                  
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Spacing="15" Orientation=" Horizontal">
+                               
+                                <Label Text="{Binding OrderID}"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center" 
+                                       FontSize="10"/>
+                                <Label Text="{Binding date}"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center" 
+                                       FontSize="10"/>
+                                
+                                 <Label Text="{Binding totalCost}"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center" 
+                                       TextColor="Blue"
+                                       FontSize="10"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

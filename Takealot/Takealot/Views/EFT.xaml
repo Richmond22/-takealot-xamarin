@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Takealot.Views.EFT"
+             Title="EFT">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="eftID1" IsVisible="false" />
+            <Label Text="Bank Details"
+                   TextColor="Teal"
+                   FontSize="22"
+                   HorizontalOptions="Center"/>
+            <Label Text="Account Holder*" FontSize="8"
+                   Margin="5"
+                   TextColor="Blue"/>
+            <Entry Placeholder="Account Holder"
+                   Margin="5"
+                   x:Name="AccHolder"/>
+            <Label Text="Bank*" FontSize="8"
+                   Margin="5"
+                   TextColor="Blue"/>
+            <Entry Placeholder="Bank"
+                   Margin="5"
+                   x:Name="bankN"/>
+            <Label Text="Account Number*" FontSize="8"
+                   Margin="5"
+                   TextColor="Blue"/>
+            <Entry Placeholder="Account Number"
+                   Margin="5"
+                   x:Name="accNumber"/>
+            <Label Text="Branch*" FontSize="8"
+                   Margin="5"
+                   TextColor="Blue"/>
+            <Entry Placeholder="Branch Code"
+                   Margin="5"
+                   x:Name="Branchc"/>
+            
+            
+            <StackLayout Orientation="Horizontal"
+                        >
+                <Button Text="SECURE PAYMENT"
+                        HorizontalOptions="CenterAndExpand"
+                        Margin="10"
+                        BorderWidth="0.5"
+                        BorderColor="Blue"
+                        Clicked="Handle_Clicked"
+                        />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

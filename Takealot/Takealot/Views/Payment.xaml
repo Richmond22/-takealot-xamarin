@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Takealot.Views.Payment">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Silver">
+            <Image Source="http://www.africabespoke.com/wp-content/uploads/2013/12/pay-now1.jpg"/>
+        
+            <Button Text="EFT" 
+                    BackgroundColor="Gray"
+                    Clicked="EftMethod"/>
+            <Button Text="CREDIT"
+                    BackgroundColor="Gray"
+                    Clicked="CreditMethod"
+                    />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
